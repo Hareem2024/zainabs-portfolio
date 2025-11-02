@@ -75,7 +75,7 @@ function Contact() {
 
         <div className="flex flex-col md:grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Contact Info */}
-          <div className="glass-card h-full w-full md:w-auto">
+          <div className="w-full md:w-auto">
             <h3 className="text-xl md:text-2xl font-semibold mb-5 text-center">Contact Information</h3>
             <div className="space-y-3">
               {contactInfo.map((info, index) => (
