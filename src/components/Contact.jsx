@@ -73,17 +73,17 @@ function Contact() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        <div className="flex flex-col md:grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
           {/* Contact Info */}
-          <div className="space-y-5 w-full">
-            <div className="glass-card">
-              <h3 className="text-xl md:text-2xl font-semibold mb-5 text-center md:text-left">Contact Information</h3>
+          <div className="space-y-5">
+            <div>
+              <h3 className="text-xl md:text-2xl font-semibold mb-5 text-center">Contact Information</h3>
               <div className="space-y-4">
                 {contactInfo.map((info, index) => (
                   <a
                     key={index}
                     href={info.link}
-                    className="flex items-center gap-4 bg-blue-50/80 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-700 p-4 rounded-2xl hover:scale-105 transition-transform duration-300 group"
+                    className="flex items-center gap-4 bg-blue-50/80 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-700 p-4 rounded-2xl hover:scale-105 transition-transform duration-300 group glass-card"
                   >
                     <div className="p-3 bg-blue-200 dark:bg-blue-800 rounded-lg group-hover:bg-blue-500 dark:group-hover:bg-blue-400 transition-colors duration-300">
                       <info.icon className="w-5 h-5 text-blue-700 dark:text-blue-300 group-hover:text-white transition-colors duration-300" />
@@ -94,9 +94,9 @@ function Contact() {
               </div>
             </div>
 
-            <div className="glass-card">
-              <h3 className="text-xl md:text-2xl font-semibold mb-5 text-center md:text-left">Connect With Me</h3>
-              <div className="flex gap-3 justify-center md:justify-start">
+            <div>
+              <h3 className="text-xl md:text-2xl font-semibold mb-5 text-center">Connect With Me</h3>
+              <div className="flex gap-3 justify-center">
                 {socialLinks.map((social, index) => (
                   <a
                     key={index}
@@ -115,7 +115,7 @@ function Contact() {
 
           {/* Contact Form */}
           <div className="glass-card">
-            <h3 className="text-xl md:text-2xl font-semibold mb-5 text-center md:text-left">Send a Message</h3>
+            <h3 className="text-xl md:text-2xl font-semibold mb-5 text-center">Send a Message</h3>
             <form className="space-y-5" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">
@@ -128,7 +128,7 @@ function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 glass rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
+                  className="w-full px-4 py-3 glass rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 text-slate-800 dark:text-slate-200"
                   placeholder="Your Name"
                 />
               </div>
@@ -143,7 +143,7 @@ function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 glass rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
+                  className="w-full px-4 py-3 glass rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 text-slate-800 dark:text-slate-200"
                   placeholder="your.email@example.com"
                 />
               </div>
@@ -158,7 +158,7 @@ function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 glass rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 resize-none"
+                  className="w-full px-4 py-3 glass rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 resize-none text-slate-800 dark:text-slate-200"
                   placeholder="Your message here..."
                 ></textarea>
               </div>
