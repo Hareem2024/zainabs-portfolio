@@ -73,17 +73,17 @@ function Contact() {
           </p>
         </div>
 
-        <div className="flex flex-col md:grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+        <div className="flex flex-col md:grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Contact Info */}
-          <div className="space-y-5">
-            <div>
+          <div className="space-y-6">
+            <div className="glass-card">
               <h3 className="text-xl md:text-2xl font-semibold mb-5 text-center">Contact Information</h3>
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {contactInfo.map((info, index) => (
                   <a
                     key={index}
                     href={info.link}
-                    className="flex items-center gap-4 bg-blue-50/80 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-700 p-4 rounded-2xl hover:scale-105 transition-transform duration-300 group glass-card"
+                    className="flex items-center gap-4 bg-blue-50/80 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-700 p-4 rounded-2xl hover:scale-105 transition-transform duration-300 group"
                   >
                     <div className="p-3 bg-blue-200 dark:bg-blue-800 rounded-lg group-hover:bg-blue-500 dark:group-hover:bg-blue-400 transition-colors duration-300">
                       <info.icon className="w-5 h-5 text-blue-700 dark:text-blue-300 group-hover:text-white transition-colors duration-300" />
@@ -94,7 +94,7 @@ function Contact() {
               </div>
             </div>
 
-            <div>
+            <div className="glass-card">
               <h3 className="text-xl md:text-2xl font-semibold mb-5 text-center">Connect With Me</h3>
               <div className="flex gap-3 justify-center">
                 {socialLinks.map((social, index) => (
