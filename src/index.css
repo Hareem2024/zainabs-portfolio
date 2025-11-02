@@ -121,50 +121,6 @@ section {
   * {
     -webkit-tap-highlight-color: transparent;
   }
-  
-  /* Improve glass visibility on mobile light mode */
-  .glass {
-    background-color: rgba(255, 255, 255, 0.25) !important;
-    border-color: rgba(255, 255, 255, 0.4) !important;
-  }
-  
-  .glass-strong {
-    background-color: rgba(255, 255, 255, 0.35) !important;
-    border-color: rgba(255, 255, 255, 0.5) !important;
-  }
-  
-  .glass-card span,
-  .glass-card p,
-  .glass-card h3 {
-    color: rgb(15, 23, 42) !important;
-  }
-  
-  .glass:not(.glass-card) span,
-  .glass:not(.glass-card) p {
-    color: rgb(15, 23, 42) !important;
-  }
-  
-  /* Dark mode overrides for mobile */
-  .dark .glass {
-    background-color: rgba(255, 255, 255, 0.05) !important;
-    border-color: rgba(255, 255, 255, 0.1) !important;
-  }
-  
-  .dark .glass-strong {
-    background-color: rgba(255, 255, 255, 0.1) !important;
-    border-color: rgba(255, 255, 255, 0.2) !important;
-  }
-  
-  .dark .glass-card span,
-  .dark .glass-card p,
-  .dark .glass-card h3 {
-    color: rgb(226, 232, 240) !important;
-  }
-  
-  .dark .glass:not(.glass-card) span,
-  .dark .glass:not(.glass-card) p {
-    color: rgb(226, 232, 240) !important;
-  }
 }
 
 /* GPU acceleration for smooth scrolling */

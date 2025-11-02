@@ -115,29 +115,29 @@ function Hero() {
             <div className="glass-strong rounded-3xl p-8 space-y-6">
               {/* Icon grid */}
               <div className="grid grid-cols-3 gap-4">
-                <div className="glass-card p-4 flex flex-col items-center justify-center animate-float" style={{ animationDelay: '0s' }}>
+                <div className="p-4 flex flex-col items-center justify-center animate-float" style={{ animationDelay: '0s' }}>
                   <BarChart3 className="w-8 h-8 text-blue-500 dark:text-blue-400 mb-2" />
-                  <span className="text-xs font-medium text-center text-slate-800 dark:text-slate-200">Analytics</span>
+                  <span className="text-xs font-medium text-center text-slate-700 dark:text-slate-200">Analytics</span>
                 </div>
-                <div className="glass-card p-4 flex flex-col items-center justify-center animate-float" style={{ animationDelay: '0.5s' }}>
+                <div className="p-4 flex flex-col items-center justify-center animate-float" style={{ animationDelay: '0.5s' }}>
                   <PieChart className="w-8 h-8 text-purple-500 dark:text-purple-400 mb-2" />
-                  <span className="text-xs font-medium text-center text-slate-800 dark:text-slate-200">Insights</span>
+                  <span className="text-xs font-medium text-center text-slate-700 dark:text-slate-200">Insights</span>
                 </div>
-                <div className="glass-card p-4 flex flex-col items-center justify-center animate-float" style={{ animationDelay: '1s' }}>
+                <div className="p-4 flex flex-col items-center justify-center animate-float" style={{ animationDelay: '1s' }}>
                   <TrendingUp className="w-8 h-8 text-pink-500 dark:text-pink-400 mb-2" />
-                  <span className="text-xs font-medium text-center text-slate-800 dark:text-slate-200">Growth</span>
+                  <span className="text-xs font-medium text-center text-slate-700 dark:text-slate-200">Growth</span>
                 </div>
-                <div className="glass-card p-4 flex flex-col items-center justify-center animate-float" style={{ animationDelay: '1.5s' }}>
+                <div className="p-4 flex flex-col items-center justify-center animate-float" style={{ animationDelay: '1.5s' }}>
                   <Database className="w-8 h-8 text-indigo-500 dark:text-indigo-400 mb-2" />
-                  <span className="text-xs font-medium text-center text-slate-800 dark:text-slate-200">Data</span>
+                  <span className="text-xs font-medium text-center text-slate-700 dark:text-slate-200">Data</span>
                 </div>
-                <div className="glass-card p-4 flex flex-col items-center justify-center animate-float" style={{ animationDelay: '2s' }}>
+                <div className="p-4 flex flex-col items-center justify-center animate-float" style={{ animationDelay: '2s' }}>
                   <LineChart className="w-8 h-8 text-cyan-500 dark:text-cyan-400 mb-2" />
-                  <span className="text-xs font-medium text-center text-slate-800 dark:text-slate-200">Reports</span>
+                  <span className="text-xs font-medium text-center text-slate-700 dark:text-slate-200">Reports</span>
                 </div>
-                <div className="glass-card p-4 flex flex-col items-center justify-center animate-float" style={{ animationDelay: '2.5s' }}>
+                <div className="p-4 flex flex-col items-center justify-center animate-float" style={{ animationDelay: '2.5s' }}>
                   <Sparkles className="w-8 h-8 text-yellow-500 dark:text-yellow-400 mb-2" />
-                  <span className="text-xs font-medium text-center text-slate-800 dark:text-slate-200">Solutions</span>
+                  <span className="text-xs font-medium text-center text-slate-700 dark:text-slate-200">Solutions</span>
                 </div>
               </div>
 

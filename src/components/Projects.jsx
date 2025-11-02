@@ -69,7 +69,7 @@ function Projects() {
                 {project.tech.map((tech, techIndex) => (
                   <span
                     key={techIndex}
-                    className="px-2.5 py-1 glass rounded-full text-xs text-slate-800 dark:text-slate-200"
+                    className="px-3 py-1.5 bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-700 rounded-full text-xs font-medium text-slate-700 dark:text-slate-200"
                   >
                     {tech}
                   </span>

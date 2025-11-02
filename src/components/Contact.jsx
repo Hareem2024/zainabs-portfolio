@@ -76,7 +76,7 @@ function Contact() {
           {/* Contact Info */}
           <div className="space-y-5">
             <div className="glass-card">
-              <h3 className="text-xl md:text-2xl font-semibold mb-5">Contact Information</h3>
+              <h3 className="text-xl md:text-2xl font-semibold mb-5 text-center md:text-left">Contact Information</h3>
               <div className="space-y-4">
                 {contactInfo.map((info, index) => (
                   <a
@@ -94,8 +94,8 @@ function Contact() {
             </div>
 
             <div className="glass-card">
-              <h3 className="text-xl md:text-2xl font-semibold mb-5">Connect With Me</h3>
-              <div className="flex gap-3">
+              <h3 className="text-xl md:text-2xl font-semibold mb-5 text-center md:text-left">Connect With Me</h3>
+              <div className="flex gap-3 justify-center md:justify-start">
                 {socialLinks.map((social, index) => (
                   <a
                     key={index}
@@ -114,7 +114,7 @@ function Contact() {
 
           {/* Contact Form */}
           <div className="glass-card">
-            <h3 className="text-xl md:text-2xl font-semibold mb-5">Send a Message</h3>
+            <h3 className="text-xl md:text-2xl font-semibold mb-5 text-center md:text-left">Send a Message</h3>
             <form className="space-y-5" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">
