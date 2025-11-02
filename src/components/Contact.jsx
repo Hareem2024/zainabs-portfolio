@@ -94,7 +94,7 @@ function Contact() {
           </div>
 
           {/* Contact Form */}
-          <div className="glass-card h-full">
+          <div className="hidden md:block glass-card h-full">
             <h3 className="text-xl md:text-2xl font-semibold mb-5 text-center">Send a Message</h3>
             <form className="space-y-5" onSubmit={handleSubmit}>
               <div>
@@ -168,7 +168,7 @@ function Contact() {
         </div>
 
         {/* Footer */}
-        <div className="mt-16 text-center glass-card py-6">
+        <div className="mt-16 text-center py-6">
           <p className="text-slate-600 dark:text-slate-400">
             Built and designed by Zainab Akram.
             <br />
