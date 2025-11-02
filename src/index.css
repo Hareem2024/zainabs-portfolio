@@ -121,6 +121,16 @@ section {
   * {
     -webkit-tap-highlight-color: transparent;
   }
+  
+  /* Center contact cards on mobile */
+  #contact .grid > div {
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  #contact .glass-card {
+    margin: 0 auto;
+  }
 }
 
 /* GPU acceleration for smooth scrolling */

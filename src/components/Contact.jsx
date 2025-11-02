@@ -75,7 +75,7 @@ function Contact() {
 
         <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {/* Contact Info */}
-          <div className="space-y-5 max-w-md md:max-w-none mx-auto md:mx-0">
+          <div className="space-y-5 w-full">
             <div className="glass-card">
               <h3 className="text-xl md:text-2xl font-semibold mb-5 text-center md:text-left">Contact Information</h3>
               <div className="space-y-4">
