@@ -4,7 +4,7 @@ function ThemeToggle({ theme, toggleTheme }) {
   return (
     <button
       onClick={toggleTheme}
-      className="fixed top-8 right-8 z-50 glass-strong rounded-full p-3 transition-all duration-300 hover:scale-110 hover:rotate-12"
+      className="hidden md:flex fixed top-8 right-8 z-50 glass-strong rounded-full p-3 transition-all duration-300 hover:scale-110 hover:rotate-12"
       aria-label="Toggle theme"
     >
       {theme === 'dark' ? (

@@ -82,12 +82,12 @@ function Contact() {
                   <a
                     key={index}
                     href={info.link}
-                    className="flex items-center gap-4 glass-card p-4 hover:scale-105 transition-transform duration-300 group"
+                    className="flex items-center gap-4 glass p-4 rounded-2xl hover:scale-105 transition-transform duration-300 group"
                   >
                     <div className="p-3 glass-strong rounded-lg group-hover:bg-blue-500 dark:group-hover:bg-blue-400 transition-colors duration-300">
                       <info.icon className="w-5 h-5 text-blue-600 dark:text-blue-400 group-hover:text-white transition-colors duration-300" />
                     </div>
-                    <span className="text-slate-700 dark:text-slate-200">{info.text}</span>
+                    <span className="text-slate-800 dark:text-slate-200 font-medium">{info.text}</span>
                   </a>
                 ))}
               </div>

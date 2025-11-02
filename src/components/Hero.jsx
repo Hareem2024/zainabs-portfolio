@@ -19,9 +19,9 @@ function Hero() {
           <div className="space-y-8">
             <div className="space-y-6">
               {/* Badge */}
-              <div className="inline-flex items-center gap-2 glass-card px-4 py-2 rounded-full">
+              <div className="inline-flex items-center gap-2 glass-card px-4 py-2 rounded-full mt-4 md:mt-0">
                 <Sparkles className="w-4 h-4 text-yellow-500" />
-                <span className="text-sm font-medium">Available for Projects</span>
+                <span className="text-sm font-medium text-slate-800 dark:text-slate-200">Available for Projects</span>
               </div>
 
               {/* Main heading */}
@@ -117,27 +117,27 @@ function Hero() {
               <div className="grid grid-cols-3 gap-4">
                 <div className="glass-card p-4 flex flex-col items-center justify-center animate-float" style={{ animationDelay: '0s' }}>
                   <BarChart3 className="w-8 h-8 text-blue-500 dark:text-blue-400 mb-2" />
-                  <span className="text-xs font-medium text-center">Analytics</span>
+                  <span className="text-xs font-medium text-center text-slate-800 dark:text-slate-200">Analytics</span>
                 </div>
                 <div className="glass-card p-4 flex flex-col items-center justify-center animate-float" style={{ animationDelay: '0.5s' }}>
                   <PieChart className="w-8 h-8 text-purple-500 dark:text-purple-400 mb-2" />
-                  <span className="text-xs font-medium text-center">Insights</span>
+                  <span className="text-xs font-medium text-center text-slate-800 dark:text-slate-200">Insights</span>
                 </div>
                 <div className="glass-card p-4 flex flex-col items-center justify-center animate-float" style={{ animationDelay: '1s' }}>
                   <TrendingUp className="w-8 h-8 text-pink-500 dark:text-pink-400 mb-2" />
-                  <span className="text-xs font-medium text-center">Growth</span>
+                  <span className="text-xs font-medium text-center text-slate-800 dark:text-slate-200">Growth</span>
                 </div>
                 <div className="glass-card p-4 flex flex-col items-center justify-center animate-float" style={{ animationDelay: '1.5s' }}>
                   <Database className="w-8 h-8 text-indigo-500 dark:text-indigo-400 mb-2" />
-                  <span className="text-xs font-medium text-center">Data</span>
+                  <span className="text-xs font-medium text-center text-slate-800 dark:text-slate-200">Data</span>
                 </div>
                 <div className="glass-card p-4 flex flex-col items-center justify-center animate-float" style={{ animationDelay: '2s' }}>
                   <LineChart className="w-8 h-8 text-cyan-500 dark:text-cyan-400 mb-2" />
-                  <span className="text-xs font-medium text-center">Reports</span>
+                  <span className="text-xs font-medium text-center text-slate-800 dark:text-slate-200">Reports</span>
                 </div>
                 <div className="glass-card p-4 flex flex-col items-center justify-center animate-float" style={{ animationDelay: '2.5s' }}>
                   <Sparkles className="w-8 h-8 text-yellow-500 dark:text-yellow-400 mb-2" />
-                  <span className="text-xs font-medium text-center">Solutions</span>
+                  <span className="text-xs font-medium text-center text-slate-800 dark:text-slate-200">Solutions</span>
                 </div>
               </div>
 
