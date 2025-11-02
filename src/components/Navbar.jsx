@@ -73,7 +73,7 @@ function Navbar() {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="block w-full text-left px-4 py-2 rounded-lg hover:bg-white/10 dark:hover:bg-white/5 transition-colors duration-200"
+                className="block w-full text-left px-4 py-2 rounded-lg hover:bg-white/10 dark:hover:bg-white/5 transition-colors duration-200 text-slate-800 dark:text-slate-200"
               >
                 {item.name}
               </button>
