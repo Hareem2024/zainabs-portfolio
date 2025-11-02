@@ -19,7 +19,7 @@ function Hero() {
           <div className="space-y-8">
             <div className="space-y-6">
               {/* Badge */}
-              <div className="inline-flex items-center gap-2 glass-card px-4 py-2 rounded-full mt-4 md:mt-0">
+              <div className="hidden md:inline-flex items-center gap-2 glass-card px-4 py-2 rounded-full">
                 <Sparkles className="w-4 h-4 text-yellow-500" />
                 <span className="text-sm font-medium text-slate-800 dark:text-slate-200">Available for Projects</span>
               </div>
@@ -72,38 +72,38 @@ function Hero() {
               </div>
 
               {/* Social links */}
-              <div className="flex items-center gap-4">
+              <div className="flex items-center justify-center md:justify-start gap-4">
                 <a
                   href="https://github.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="glass-card p-3 rounded-lg hover:scale-110 transition-transform duration-300"
+                  className="glass-card p-3 rounded-lg hover:scale-110 transition-transform duration-300 flex items-center justify-center"
                   aria-label="GitHub"
                 >
-                  <Github className="w-5 h-5" />
+                  <Github className="w-5 h-5 text-blue-600 dark:text-blue-400" />
                 </a>
                 <a
                   href="https://linkedin.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="glass-card p-3 rounded-lg hover:scale-110 transition-transform duration-300"
+                  className="glass-card p-3 rounded-lg hover:scale-110 transition-transform duration-300 flex items-center justify-center"
                   aria-label="LinkedIn"
                 >
-                  <Linkedin className="w-5 h-5" />
+                  <Linkedin className="w-5 h-5 text-blue-600 dark:text-blue-400" />
                 </a>
                 <a
-                  href="mailto:your.email@example.com"
-                  className="glass-card p-3 rounded-lg hover:scale-110 transition-transform duration-300"
+                  href="mailto:zainabakram115@gmail.com"
+                  className="glass-card p-3 rounded-lg hover:scale-110 transition-transform duration-300 flex items-center justify-center"
                   aria-label="Email"
                 >
-                  <Mail className="w-5 h-5" />
+                  <Mail className="w-5 h-5 text-blue-600 dark:text-blue-400" />
                 </a>
                 <a
                   href="#resume"
-                  className="glass-card p-3 rounded-lg hover:scale-110 transition-transform duration-300"
+                  className="glass-card p-3 rounded-lg hover:scale-110 transition-transform duration-300 flex items-center justify-center"
                   aria-label="Resume"
                 >
-                  <FileText className="w-5 h-5" />
+                  <FileText className="w-5 h-5 text-blue-600 dark:text-blue-400" />
                 </a>
               </div>
             </div>
