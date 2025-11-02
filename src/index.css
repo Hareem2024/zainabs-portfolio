@@ -118,7 +118,7 @@ section {
     }
   }
   
-  * {
+  button, a {
     -webkit-tap-highlight-color: transparent;
   }
   
@@ -130,6 +130,15 @@ section {
   
   #contact .glass-card {
     margin: 0 auto;
+  }
+  
+  /* Fix mobile menu text visibility */
+  nav button {
+    color: rgb(30, 41, 59) !important;
+  }
+  
+  nav button.dark, .dark nav button {
+    color: rgb(226, 232, 240) !important;
   }
 }
 
