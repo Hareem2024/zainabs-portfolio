@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import Hero from './components/Hero'
 import About from './components/About'
 import Skills from './components/Skills'
@@ -6,23 +6,12 @@ import Projects from './components/Projects'
 import Experience from './components/Experience'
 import Contact from './components/Contact'
 import Navbar from './components/Navbar'
-import ThemeToggle from './components/ThemeToggle'
 
 function App() {
-  const [theme, setTheme] = useState('dark')
-
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme') || 'dark'
-    setTheme(savedTheme)
-    document.documentElement.classList.toggle('dark', savedTheme === 'dark')
+    // Always use dark mode
+    document.documentElement.classList.add('dark')
   }, [])
-
-  const toggleTheme = () => {
-    const newTheme = theme === 'dark' ? 'light' : 'dark'
-    setTheme(newTheme)
-    localStorage.setItem('theme', newTheme)
-    document.documentElement.classList.toggle('dark', newTheme === 'dark')
-  }
 
   return (
     <div className="min-h-screen relative overflow-hidden">
@@ -33,7 +22,6 @@ function App() {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-400/20 dark:bg-indigo-500/10 rounded-full blur-3xl animate-float-slow will-change-transform" style={{ animationDelay: '1.5s' }}></div>
       </div>
 
-      <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
       <Navbar />
       <Hero />
       <About />
