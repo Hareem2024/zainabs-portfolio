@@ -75,7 +75,7 @@ function Contact() {
 
         <div className="flex flex-col md:grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Contact Info */}
-          <div className="glass-card">
+          <div className="glass-card h-full">
             <h3 className="text-xl md:text-2xl font-semibold mb-5 text-center">Contact Information</h3>
             <div className="space-y-3">
               {contactInfo.map((info, index) => (
@@ -94,7 +94,7 @@ function Contact() {
           </div>
 
           {/* Contact Form */}
-          <div className="glass-card">
+          <div className="glass-card h-full">
             <h3 className="text-xl md:text-2xl font-semibold mb-5 text-center">Send a Message</h3>
             <form className="space-y-5" onSubmit={handleSubmit}>
               <div>
