@@ -53,6 +53,7 @@ function Contact() {
   const contactInfo = [
     { icon: Mail, text: 'zainabakram115@gmail.com', link: 'mailto:zainabakram115@gmail.com' },
     { icon: MapPin, text: 'Islamabad, Pakistan', link: '#' },
+    { icon: Linkedin, text: 'LinkedIn Profile', link: 'https://www.linkedin.com/in/zainab-akram-1151a7283' },
   ]
 
   const socialLinks = [
@@ -74,7 +75,7 @@ function Contact() {
 
         <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {/* Contact Info */}
-          <div className="space-y-5">
+          <div className="space-y-5 max-w-md md:max-w-none mx-auto md:mx-0">
             <div className="glass-card">
               <h3 className="text-xl md:text-2xl font-semibold mb-5 text-center md:text-left">Contact Information</h3>
               <div className="space-y-4">
