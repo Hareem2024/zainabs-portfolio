@@ -75,41 +75,21 @@ function Contact() {
 
         <div className="flex flex-col md:grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Contact Info */}
-          <div className="space-y-6">
-            <div className="glass-card">
-              <h3 className="text-xl md:text-2xl font-semibold mb-5 text-center">Contact Information</h3>
-              <div className="space-y-3">
-                {contactInfo.map((info, index) => (
-                  <a
-                    key={index}
-                    href={info.link}
-                    className="flex items-center gap-4 bg-blue-50/80 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-700 p-4 rounded-2xl hover:scale-105 transition-transform duration-300 group"
-                  >
-                    <div className="p-3 bg-blue-200 dark:bg-blue-800 rounded-lg group-hover:bg-blue-500 dark:group-hover:bg-blue-400 transition-colors duration-300">
-                      <info.icon className="w-5 h-5 text-blue-700 dark:text-blue-300 group-hover:text-white transition-colors duration-300" />
-                    </div>
-                    <span className="text-slate-800 dark:text-slate-200 font-medium">{info.text}</span>
-                  </a>
-                ))}
-              </div>
-            </div>
-
-            <div className="glass-card">
-              <h3 className="text-xl md:text-2xl font-semibold mb-5 text-center">Connect With Me</h3>
-              <div className="flex gap-3 justify-center">
-                {socialLinks.map((social, index) => (
-                  <a
-                    key={index}
-                    href={social.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-blue-50/80 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-700 p-3 rounded-xl hover:scale-110 transition-all duration-300"
-                    aria-label={social.label}
-                  >
-                    <social.icon className="w-5 h-5 text-blue-700 dark:text-blue-300" />
-                  </a>
-                ))}
-              </div>
+          <div className="glass-card">
+            <h3 className="text-xl md:text-2xl font-semibold mb-5 text-center">Contact Information</h3>
+            <div className="space-y-3">
+              {contactInfo.map((info, index) => (
+                <a
+                  key={index}
+                  href={info.link}
+                  className="flex items-center gap-4 bg-blue-50/80 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-700 p-4 rounded-2xl hover:scale-105 transition-transform duration-300 group"
+                >
+                  <div className="p-3 bg-blue-200 dark:bg-blue-800 rounded-lg group-hover:bg-blue-500 dark:group-hover:bg-blue-400 transition-colors duration-300">
+                    <info.icon className="w-5 h-5 text-blue-700 dark:text-blue-300 group-hover:text-white transition-colors duration-300" />
+                  </div>
+                  <span className="text-slate-800 dark:text-slate-200 font-medium">{info.text}</span>
+                </a>
+              ))}
             </div>
           </div>
 
